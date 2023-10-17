@@ -46,6 +46,8 @@ git log  # 查看版本库 详细
 
 小公司常用方案: master 分支、dev 分支、bug 分支 、个人分支
 
+> 以前默认master是主分支, 现在默认main分支
+
 常用分支操作
 
 ```bash
