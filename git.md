@@ -46,7 +46,7 @@ git log  # 查看版本库 详细
 
 小公司常用方案: master 分支、dev 分支、bug 分支 、个人分支
 
-> 以前默认master是主分支, 现在默认main分支
+> 以前默认 master 是主分支, 现在默认 main 分支
 
 常用分支操作
 
@@ -61,8 +61,10 @@ git merge 分支名    # 合并分支
 
 git pull origin master
 ```
+
 > git pull:
->  1. 暂存区 工作区 版本库 都会被替换成远程仓库分支的版本。
+>
+> 1.  暂存区 工作区 版本库 都会被替换成远程仓库分支的版本。
 
 # git 搭建远程仓库
 
@@ -79,7 +81,9 @@ git commit -m 'comment'
 git remote add origin 仓库路径 #添加一个远程仓库地址名字叫origin（仅本地有效）
 git push origin master # 把本地版本库-> origin对应的远程仓库的master上
 ```
-> origin: 在本地仓库中对远程仓库起的别名, 一般叫origin
+
+> origin: 在本地仓库中对远程仓库起的别名, 一般叫 origin
+
 ```bash
 git clone 仓库地址
 ```
@@ -89,9 +93,15 @@ git clone 仓库地址
 ## 冲突情况
 
 1. 多人开发同一分支
-2. 不同分支同一文件被修改,然后merge
+2. 不同分支同一文件被修改,然后 merge
 
-> 解决: 多pull
+> 解决: 多 pull
 
+## 回退
 
+```bash
+git reset --hard 版本号    #本地版本回退， 版本号可以git log 看到
 
+git push origin master -f  #强行推到远端，完全以我为准
+
+```
