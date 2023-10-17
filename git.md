@@ -56,6 +56,7 @@ git branch #查看已建立的分支
 git branch 分支名   # 建立分支
 
 git checkout 分支名 # 切换分支
+git checkout -b 分支名 #创建并切换到该分支
 
 git merge 分支名    # 合并分支
 
@@ -85,7 +86,7 @@ git push origin master # 把本地版本库-> origin对应的远程仓库的mast
 > origin: 在本地仓库中对远程仓库起的别名, 一般叫 origin
 
 ```bash
-git clone 仓库地址
+git clone 仓库地址	#克隆主分支
 ```
 
 > 出现冲突, 怎么解决?
